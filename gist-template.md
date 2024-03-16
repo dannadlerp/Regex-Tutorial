@@ -1,10 +1,14 @@
-# Title (replace with your title)
+# Title Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+As a University of Toronto Bootcamp student, I am learning about Regular Expressions (regex). This tutorial will help breakdown one such Regex and define it so we can better learn how it functions.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+A Regular Expression is a sequence that picks out match patterns in text. Often used by string-searching algorithyms to find or find and replace operations to validate user input.
+
+Below is a Regex that scans a string and validated whether or not it is in the format of an email address:
+
+`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`
 
 ## Table of Contents
 
@@ -20,6 +24,13 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+
+Anchors defines the position of the pattern in the input string.
+
+- `^` defines the beginning of the string
+- `$` defines the end of the string
+
+Using both ensures the string matches the pattern.
 
 ### Quantifiers
 
